@@ -9,7 +9,11 @@ export default function NewItem() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const item = { name, quantity, category };
+    const item = {
+      name: name,
+      quantity: quantity,
+      category: category,
+    };
     console.log(item);
     alert(
       `Added item: ${item.name}, quantity: ${item.quantity}, category: ${item.category}`
@@ -42,6 +46,7 @@ export default function NewItem() {
             max="99"
             value={quantity}
             onChange={(event) => setQuantity(event.target.value)}
+            required
             className="w-20 ml-1 border-2 border-gray-300 p-2 rounded-lg"
           />
           <select
