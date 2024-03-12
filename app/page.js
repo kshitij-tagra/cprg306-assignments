@@ -40,6 +40,13 @@ export default function Page() {
       >
         Week 6 Assignment
       </Link>
+      <br />
+      <Link
+        href="week-7"
+        className="text-xl pl-56 hover:text-sky-500 hover:underline"
+      >
+        Week 7 Assignment
+      </Link>
     </main>
   );
 }
