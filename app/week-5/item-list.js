@@ -46,7 +46,7 @@ export default function ItemList() {
       </div>
       <ul className="m-4">
         {items.map((item) => (
-          <li key={item.id} className="w-96 bg-slate-900 text-sky-50">
+          <li className="w-96 bg-slate-900 text-sky-50">
             <Item
               name={item.name}
               quantity={item.quantity}
