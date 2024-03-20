@@ -18,7 +18,7 @@ export default function Page() {
             <button onClick={firebaseSignOut}>Sign out</button>
             <br />
             <Link href="./week-8/shopping-list">
-              Continue to your Shopping Lnist
+              Continue to your Shopping List
             </Link>
           </>
         ) : (
