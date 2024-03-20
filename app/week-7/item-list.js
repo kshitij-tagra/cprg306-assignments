@@ -45,7 +45,10 @@ export default function ItemList({ items, onItemSelect }) {
       </div>
       <ul className="m-4">
         {items.map((item) => (
-          <li className="w-80 bg-slate-900 text-sky-50 hover:bg-orange-700">
+          <li
+            key={item.id}
+            className="w-80 bg-slate-900 text-sky-50 hover:bg-orange-700"
+          >
             <Item
               key={item.id}
               name={item.name}
