@@ -22,7 +22,7 @@ export default function ItemList() {
   return (
     <div className="m-4">
       <div>
-        <label for="sort">Sort by:</label>
+        <label>Sort by:</label>
         <button
           onClick={nameClicked}
           className={
@@ -48,6 +48,7 @@ export default function ItemList() {
         {items.map((item) => (
           <li className="w-96 bg-slate-900 text-sky-50">
             <Item
+              key={item.id}
               name={item.name}
               quantity={item.quantity}
               category={item.category}

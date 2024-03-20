@@ -21,7 +21,7 @@ export default function ItemList({ items }) {
   return (
     <div className="m-4">
       <div>
-        <label for="sort">Sort by:</label>
+        <label>Sort by:</label>
         <button
           onClick={nameClicked}
           className={
